@@ -1,0 +1,55 @@
+#headerInicial{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #9d4df8;
+    min-height: 100px;
+    height: 80px;                  /* ou o tamanho que quiser */
+    justify-content: center;       /* centraliza horizontalmente */
+    font-size: 1.8rem;
+
+}
+
+#textoH{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px; 
+    color: white;
+}
+
+body{
+    background-color: rgb(201, 147, 239);
+}
+
+
+#container {
+    display: flex;
+    gap: 40px;             /* espaço entre os cards */
+    width: 80vw;           /* largura total que o container vai ocupar (80% da viewport) */
+    max-width: 900px;      /* limite máximo opcional */
+    margin: 0 auto;        /* centraliza o container horizontalmente */
+    margin-top: 200px;
+  }
+
+  .card button {
+    padding: 18px 35px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #ecdd79;
+    color: rgb(37, 6, 55);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .card {
+    flex: 1 1 0;           /* os cards vão crescer e encolher igualmente, mesma largura */
+    height: 200px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
