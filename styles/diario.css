@@ -1,0 +1,117 @@
+:root {
+  --cor-fundo: #e6e6fa;
+  --cor-fonte: #333;
+  --cor-primaria: #d9c2f2;
+  --cor-primaria-hover: #c9aef0;
+  --cor-card: #f5f5ff;
+  --cor-sombra: rgba(0, 0, 0, 0.1);
+  --raio-borda: 16px;
+  --fonte: 'Segoe UI', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fonte);
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-fonte);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Container principal */
+.container {
+  background-color: white;
+  border-radius: var(--raio-borda);
+  box-shadow: 0 0 15px var(--cor-sombra);
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Data */
+#dataAtual {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Emojis */
+.emoji-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.emoji {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.emoji:hover {
+  transform: scale(1.3);
+}
+
+/* Texto da emoção escolhida */
+#emocaoEscolhida {
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: var(--raio-borda);
+  background-color: var(--cor-card);
+  border: 1px solid #ddd;
+  margin-left: 5px;
+}
+
+/* Relatos */
+textarea {
+  width: 100%;
+  border: none;
+  border-radius: var(--raio-borda);
+  padding: 15px;
+  font-size: 14px;
+  background-color: #f7f7f7;
+  box-shadow: inset 0 0 4px var(--cor-sombra);
+  resize: none;
+  min-height: 100px;
+  margin-bottom: 15px;
+}
+
+/* Botão salvar */
+#salvarButton {
+  width: 100%;
+  background-color: var(--cor-primaria);
+  border: none;
+  border-radius: var(--raio-borda);
+  padding: 12px;
+  color: var(--cor-fonte);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-bottom: 20px;
+}
+
+#salvarButton:hover {
+  background-color: var(--cor-primaria-hover);
+}
+
+/* Histórico */
+#historico {
+  list-style: none;
+  margin-top: 10px;
+}
+
+#historico li {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}

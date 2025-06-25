@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href= "/style/estilo.css">
-    <title>Diário Emocional</title>
-    <script src= "/scripts/diario.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diário Emocional</title>
+  <link rel="stylesheet" href="../styles/diario.css" />
+  <script src="../scripts/diario.js" defer></script>
 </head>
 <body>
-    
+  <main class="container">
+    <p id="dataAtual">Data</p>
+
+    <h3>Como você está se sentindo hoje?</h3>
+    <div class="emoji-container">
+      <button class="emoji" aria-label="Muito feliz">😍</button>
+      <button class="emoji" aria-label="Triste">😢</button>
+      <button class="emoji" aria-label="Com sono">😴</button>
+      <button class="emoji" aria-label="Irritado">😡</button>
+      <button class="emoji" aria-label="Surpreso">😳</button>
+    </div>
+
+    <p>Você escolheu: <span id="emocaoEscolhida">Nenhuma</span></p>
+
+    <h3>Meus relatos</h3>
+    <textarea id="relato" placeholder="Escreva sobre seu dia..."></textarea>
+    <button id="salvarButton">Salvar</button>
+
+    <h3>Histórico de Registros</h3>
+    <ul id="historico"></ul>
+  </main>
 </body>
 </html>
