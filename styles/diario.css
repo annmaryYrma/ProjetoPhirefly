@@ -53,7 +53,6 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  transition: transform 0.2s;
 }
 
 .emoji:hover {
@@ -94,7 +93,6 @@ textarea {
   color: var(--cor-fonte);
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s;
   margin-bottom: 20px;
 }
 
@@ -114,4 +112,22 @@ textarea {
   border-radius: 8px;
   margin-bottom: 8px;
   font-size: 14px;
+}
+
+ .navegacao {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.navegacao a {
+  color: var(--cor-fonte);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.navegacao a:hover {
+  background-color: var(--cor-primaria-hover);
 }

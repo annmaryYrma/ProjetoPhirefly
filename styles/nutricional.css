@@ -1,0 +1,113 @@
+:root {
+  --cor-fundo: #e6e6fa;
+  --cor-fonte: #333;
+  --cor-primaria: #d9c2f2;
+  --cor-primaria-hover: #c9aef0;
+  --cor-card: #f5f5ff;
+  --cor-sombra: rgba(0, 0, 0, 0.1);
+  --raio-borda: 16px;
+  --fonte: 'Segoe UI', sans-serif;
+
+  --espaco-padrao: 20px;
+  --raio-borda-card: 15px;
+  --raio-borda-botao: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: var(--fonte);
+}
+ body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-fonte);
+    padding: var(--espaco-padrao);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .user-card {
+  background-color: var(--cor-card);
+  border-radius: var(--raio-borda-card);
+  padding: var(--espaco-padrao);
+  margin-bottom: var(--espaco-padrao);
+  max-width: 600px;
+  box-shadow: 0 4px 8px var(--cor-sombra);
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Títulos */
+h3, h4 {
+  margin-top: var(--espaco-padrao);
+  margin-bottom: 10px;
+  text-align: center;
+  max-width: 600px;
+}
+
+/* Botões */
+button {
+  background-color: var(--cor-primaria);
+  color: var(--cor-fonte);
+  border: none;
+  border-radius: var(--raio-borda);
+  padding: 12px 20px;
+  margin: 10px auto;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--cor-primaria-hover);
+}
+
+/* Listas */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 10px;
+  max-width: 600px;
+  width: 100%;
+}
+
+ul li {
+  background-color: var(--cor-card);
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: var(--raio-borda);
+  box-shadow: 0 2px 4px var(--cor-sombra);
+  font-size: 0.95rem;
+}
+
+/* Sugestões */
+.sugestoes {
+  background-color: var(--cor-card);
+  border-radius: var(--raio-borda);
+  padding: var(--espaco-padrao);
+  max-width: 600px;
+  margin-top: var(--espaco-padrao);
+  box-shadow: 0 2px 6px var(--cor-sombra);
+  font-size: 0.95rem;
+}
+
+ .navegacao {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.navegacao a {
+  color: var(--cor-fonte);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.navegacao a:hover {
+  background-color: var(--cor-primaria-hover);
+}

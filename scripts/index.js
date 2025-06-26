@@ -24,7 +24,7 @@ criarCard("Agenda nutricional", () => {
 const textoH = document.createElement('p');
 const headerIn = document.getElementById("headerInicial");
 headerIn.appendChild(textoH)
-textoH.innerText = "Seja bem vindo!"
+textoH.innerText = "Seja bem vindo ao Phirefly!"
 textoH.id = 'textoH' 
 
 
